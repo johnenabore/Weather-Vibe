@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Weather Vibe</title>
+  </head>
+  <body>
+    <main>
+        <div id="card">
+          <video id="background-video" autoplay muted loop playsinline>
+            <source src="videos/bg.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+         </video>
+            <div id="searchBar">
+                <input type="text" id="text" placeholder="Search" />
+                <button type="button" id="button">
+                  <img src="images/search.png" alt="" srcset="" />
+                </button>
+              </div>
+
+                <div id="emoticonWeather"></div>
+                <p id="temp"></p>
+                <p id="cityName"></p>
+                <p id="countryName"></p>
+                <p id="timeDisplay"></p>
+
+              <div id="containerBottom">
+                  <div id="humidContainer" >
+                    <img id="humidImage" alt="">
+                    <p id="humid"></p>
+                    <p id="humidText" style="font-size: .9rem;"></p>
+                  </div>
+
+                  <div id="windContainer" >
+                        <img id="windImage">
+                        <p id="wind"></p>
+                        <p id="windSpeedText" style="font-size: .9rem;"></p>
+                  </div>
+
+                  <div class="predictWeatherContainer">
+                    <div class="headerPredictWeather">
+                      <img src="images/calendar.png" style="width: 13px;" alt="">
+                      <p class="forcastText">5 DAYS FORECAST AS OF : </p>
+                      <hr>
+                    </div>
+                    <div class="forecastItemsContainer"></div>
+                  </div>
+
+                  <div id="feelsLikeContainer">
+                    <img id="feelsLikeimg">
+                        <p id="feelsLikeText"></p>
+                        <p id="feelsLike"></p>
+                        <p id="feelsLikeDescription"></p>
+                  </div>
+
+                  <div id="sunRiseSetContainer">
+                    <img id="riseSetimg">
+                    <p id="riseSetText"></p>
+                    <p id="timeRise"></p>
+                    <p id="sunset"></p>
+                    <p id="pst"></p>
+                  </div>
+
+                  <div id="windContentContainer">
+                    <div id="windInfoContainer">
+                      <img src="images/wind.png">
+                      <p id="windText" style="font-size: 1rem;">Wind</p>
+                      <hr>
+                      <div id="windSection">
+                        <p>Wind</p>
+                        <p class="windInfo" id="windkmh"></p>
+                      </div>
+                      <hr>
+                      <div id="gustSection">
+                        <p>Gusts</p>
+                        <p class="windInfo" id="gustkmh"></p>
+                      </div>
+                      <hr>
+                      <div id="directionSection">
+                        <p>Direction</p>
+                        <p class="windInfo" id="directionkmh"></p>
+                      </div>
+                    </div>
+                    <div id="imgSection">
+                      <div id="ball">
+                        <div id="infoInBall">
+                          <p id="windValue"></p>
+                          <p>km/h</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <footer>
+                  <p>more features to be added.</p>
+                </footer>
+              <div id="dummyPrompt">
+                <div class="title-container">
+                  <div id="ball"></div>
+                  <h1 id="titlePage">Weather Vibe</h1>
+                </div>
+                <div>
+                  <h2>Provides Accurate Weather Updates at Your Fingertips</h2>
+                  <p id="description">simply enter the city name or places</p>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
