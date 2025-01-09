@@ -6,4 +6,6 @@ WeatherApp is a simple and elegant web application that provides real-time weath
 **Features:**
 
 Real-time Weather Data: Fetch current weather conditions for any city worldwide.
+
+
 Dynamic UI Updates: Seamless integration of API data with the user interface for an intuitive experience.
